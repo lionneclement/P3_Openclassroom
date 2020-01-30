@@ -4,43 +4,54 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width"/>
         <title>Titre</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </head>
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <body data-spy="scroll" data-target=".navbar">
+      <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
           <div class="container">
             <a class="navbar-brand" href="#">Les Films de Plein Air</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon icon-bar"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Accueil</a>
+              <ul class="navbar-nav nav ml-auto nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#accueil">Accueil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Films</a>
+                  <a class="nav-link" href="#programme">Programme</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#reserver">Réserver</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#actualites">Actualités</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
           </div>
           </nav>
-
-          <div class="jumbotron jumbotron-fluid mt-5">
+        </header>
+        
+            <div class="jumbotron jumbotron-fluid mt-5" id="accueil">
             <div class="container text-center">
               <h1 class="display-3">Les Films de Plein Air</h1>
               <p class="lead">Cet été, du 5 au 8 Août, le parc Monceau devient une salle de cinéma !</p>
             </div>
-          </div>
+            </div>
+        
+          
 
-          <div class="container mb-4">
+          <div class="container">
             <div class="text-center mb-4">
               <h3 class="display-4">Le festival</h3>
             </div>
@@ -56,52 +67,268 @@
                 </div>
               </div>
           </div>
-
-          <div class="container pt-5">
+          
+          <div class="container" id="programme">
             <div class="text-center mb-4">
               <h3 class="display-4">Notre Programme</h3>
             </div>
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="true">5 Août</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-6-tab" data-toggle="pill" href="#pills-6" role="tab" aria-controls="pills-6" aria-selected="false">6 Août</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-7-tab" data-toggle="pill" href="#pills-7" role="tab" aria-controls="pills-7" aria-selected="false">7 Août</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-8-tab" data-toggle="pill" href="#pills-8" role="tab" aria-controls="pills-8" aria-selected="false">8 Août</a>
+              </li>
+            </ul>
+            <div class="tab-content " id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+                <div class="row">
+                  <div class="col-md-4 mb-4">
+                    <div class="card">
+                      <img src="image/gladiador.jpg" class="card-img-top" alt="Gladiador">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Gladiador</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Séance le 5 Août 2020 à 18h</small></p>
+                        <a href="https://www.youtube.com/watch?v=owK1qxDselE"  target="_blank" class="btn">Bande Annonce</a>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="image/rampage.jpg" class="card-img-top" alt="Rampage">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Rampage</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Séance le 5 Août 2020 à 20h</small></p>
+                      <a href="https://www.youtube.com/watch?v=coOKvrsmQiI"  target="_blank" class="btn">Bande Annonce</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="image/survivor.jpg" class="card-img-top" alt="Survivor">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Survivor</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Séance le 5 Août 2020 à 22h</small></p>
+                      <a href="https://www.youtube.com/watch?v=e2obIw1sOAg"  target="_blank" class="btn">Bande Annonce</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="tab-pane fade" id="pills-6" role="tabpanel" aria-labelledby="pills-6-tab">
+                <div class="row">
+                  <div class="col-md-4 mb-4">
+                    <div class="card">
+                      <img src="image/gladiador.jpg" class="card-img-top" alt="Gladiador">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Gladiador</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Séance le 6 Août 2020 à 18h</small></p>
+                        <a href="https://www.youtube.com/watch?v=owK1qxDselE"  target="_blank" class="btn">Bande Annonce</a>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="image/rampage.jpg" class="card-img-top" alt="Rampage">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Rampage</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Séance le 6 Août 2020 à 20h</small></p>
+                      <a href="https://www.youtube.com/watch?v=coOKvrsmQiI"  target="_blank" class="btn">Bande Annonce</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="image/survivor.jpg" class="card-img-top" alt="Survivor">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Survivor</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Séance le 6 Août 2020 à 22h</small></p>
+                      <a href="https://www.youtube.com/watch?v=e2obIw1sOAg"  target="_blank" class="btn">Bande Annonce</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-7" role="tabpanel" aria-labelledby="pills-7-tab">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="image/gladiador.jpg" class="card-img-top" alt="Gladiador">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Gladiador</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Séance le 7 Août 2020 à 18h</small></p>
+                      <a href="https://www.youtube.com/watch?v=owK1qxDselE"  target="_blank" class="btn">Bande Annonce</a>
+                    </div>
+                  </div>
+                </div>
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <img src="image/rampage.jpg" class="card-img-top" alt="Rampage">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Rampage</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Séance le 7 Août 2020 à 20h</small></p>
+                    <a href="https://www.youtube.com/watch?v=coOKvrsmQiI"  target="_blank" class="btn">Bande Annonce</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <img src="image/survivor.jpg" class="card-img-top" alt="Survivor">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Survivor</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Séance le 7 Août 2020 à 22h</small></p>
+                    <a href="https://www.youtube.com/watch?v=e2obIw1sOAg"  target="_blank" class="btn">Bande Annonce</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-8" role="tabpanel" aria-labelledby="pills-8-tab">
             <div class="row">
               <div class="col-md-4 mb-4">
                 <div class="card">
-                  <img src="https://image.tmdb.org/t/p/original/9qsP89Aby04uSUycCNVrK8XH8qb.jpg" class="card-img-top" alt="...">
+                  <img src="image/gladiador.jpg" class="card-img-top" alt="Gladiador">
                   <div class="card-body text-center">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Gladiador</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Séance le 5 Août 2020 à 20h</small></p>
-                    <button href="#" class="btn btn-secondary">Bande Annonce</button>
+                    <p class="card-text"><small class="text-muted">Séance le 8 Août 2020 à 18h</small></p>
+                    <a href="https://www.youtube.com/watch?v=owK1qxDselE"  target="_blank" class="btn">Bande Annonce</a>
                   </div>
                 </div>
               </div>
             <div class="col-md-4 mb-4">
               <div class="card">
-                <img src="https://image.tmdb.org/t/p/original/9qsP89Aby04uSUycCNVrK8XH8qb.jpg" class="card-img-top" alt="...">
+                <img src="image/rampage.jpg" class="card-img-top" alt="Rampage">
                 <div class="card-body text-center">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Rampage</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Séance le 6 Août 2020 à 20h</small></p>
-                  <button href="#" class="btn btn-secondary">Bande Annonce</button>
+                  <p class="card-text"><small class="text-muted">Séance le 8 Août 2020 à 20h</small></p>
+                  <a href="https://www.youtube.com/watch?v=coOKvrsmQiI"  target="_blank" class="btn">Bande Annonce</a>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-4">
               <div class="card">
-                <img src="https://image.tmdb.org/t/p/original/9qsP89Aby04uSUycCNVrK8XH8qb.jpg" class="card-img-top" alt="...">
+                <img src="image/survivor.jpg" class="card-img-top" alt="Survivor">
                 <div class="card-body text-center">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Survivor</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Séance le 7 Août 2020 à 20h</small></p>
-                  <button href="#" class="btn btn-secondary">Bande Annonce</button>
+                  <p class="card-text"><small class="text-muted">Séance le 8 Août 2020 à 22h</small></p>
+                  <a href="https://www.youtube.com/watch?v=e2obIw1sOAg"  target="_blank" class="btn">Bande Annonce</a>
                 </div>
               </div>
             </div>
           </div>
           </div>
+        </div>
+        </div>
           
 
-          <form class="needs-validation container pt-5">
+          <form class="needs-validation container" id='reserver'>
             <div class="text-center">
                   <h3 class="display-4">Réserver votre séance</h3>
+            </div>
+            <div class="form-row mt-4">
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip01">Votre Prénom</label>
+                <input type="text" class="form-control" id="validationTooltip01" placeholder="Mark" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip02">Votre Nom</label>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="Dubois" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip03">Votre Email</label>
+                <input type="email" class="form-control" id="validationTooltip03" placeholder="MarkDubois@gmail.com" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip04">Votre Téléphone</label>
+                <input type="text" class="form-control" id="validationTooltip04" placeholder="07 77 77 77 77" required>
+              </div>
+              <div class="col-md-6 mb-4">
+                <label for="validationTooltip05">Nombre de personnes</label>
+                <input type="number" min="0" class="form-control" id="validationTooltip05" value="1" required>
+              </div>
+              <div class="col-md-6 mb-4">
+                <label for="validationTooltip06">Votre Film</label>
+                <select id="validationTooltip06" class="form-control" required>
+                  <option selected>Gladiador</option>
+                  <option>Rampage</option>
+                  <option>Survivor</option>
+                </select>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-lg mb-4" type="submit">Confirmer</button>
+            </div>
+          </form>
+
+          <div class="container"  id="actualites">
+            <div class="text-center mb-4">
+              <h3 class="display-4">Actualités</h3>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-6">
+                <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="mb-2 card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="mb-2 card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="mb-2 card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="mb-2 card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="needs-validation container" id="contact">
+            <div class="text-center">
+                  <h3 class="display-4">Contact</h3>
             </div>
             <div class="form-row mt-4">
               <div class="col-md-6 mb-3">
@@ -120,25 +347,16 @@
                 <label for="validationTooltip04">Votre Téléphone</label>
                 <input type="text" class="form-control" id="validationTooltip04" placeholder="07 77 77 77 77" required>
               </div>
-              <div class="col-md-6 mb-4">
+              <div class="col-md-12 mb-4">
                 <label for="validationTooltip05">Nombre de personnes</label>
-                <input type="number" class="form-control" id="validationTooltip05" value="1" required>
-              </div>
-              <div class="col-md-6 mb-4">
-                <label for="validationTooltip06">Votre Film</label>
-                <select id="validationTooltip06" class="form-control" required>
-                  <option selected>Choisir</option>
-                  <option>Super Man</option>
-                  <option>Super Man</option>
-                  <option>Super Man</option>
-                  <option>Super Man</option>
-                  <option>Super Man</option>
-                </select>
+                <textarea  class="form-control" id="validationTooltip05" placeholder="Votre Message" required></textarea>
               </div>
             </div>
-            <button class="btn btn-secondary btn-lg btn-block mb-4"" type="submit">Confirmer</button>
+            <div class="text-center">
+              <button class="btn btn-lg mb-4" type="submit">Confirmer</button>
+            </div>
+            
           </form>
-
           
     </body>
 </html>
