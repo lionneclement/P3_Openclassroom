@@ -1,5 +1,8 @@
+body{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+}
 .navbar{
-  background-color:orange;
+  background-color:#ff8533;
 }
 .navbar-light .navbar-brand{
   color:white !important;
@@ -8,14 +11,21 @@
   color:white !important;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-  background-color: orangered !important;
+  background-color: #ff6600 !important;
 }
-#programme,#reserver,#actualites,#contact,#contact{
+#programme,#reserver,#actualites,#contact{
   padding-top: 50px;
 }
 a{
   color:black !important;
 }
 .btn{
-  background-color: orangered !important;
+  background-color: #ff8533 !important;
+}
+
+#form1,#form2,footer{
+  background-color: #e9ecef;
+}
+.footer-copyright {
+  background-color: #ff8533;
 }
