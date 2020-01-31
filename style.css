@@ -1,31 +1,24 @@
 body{
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
 }
-.navbar{
-  background-color:#ff8533;
+.navbar, .btn, .footer-copyright{
+  background-color: #FF8533 !important;
 }
-.navbar-light .navbar-brand{
-  color:white !important;
-}
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, footer, a.btn, button.btn, a.nav-link.active{
   color:white !important;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-  background-color: #ff6600 !important;
+  background-color: #FF6600 !important;
 }
 #programme,#reserver,#actualites,#contact{
   padding-top: 50px;
 }
-a{
-  color:black !important;
+a.stretched-link, footer a, a.nav-link{
+  color: black !important;
 }
-.btn{
-  background-color: #ff8533 !important;
+a.stretched-link:hover, footer a:hover{
+  color: #FF6600 !important;
 }
-
 #form1,#form2,footer{
   background-color: #e9ecef;
-}
-.footer-copyright {
-  background-color: #ff8533;
 }
