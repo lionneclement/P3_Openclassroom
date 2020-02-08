@@ -1,24 +1,60 @@
-body{
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
-.navbar, .btn, .footer-copyright{
-  background-color: #FF8533 !important;
+.navbar,
+.btn,
+.footer-copyright {
+  background-color: #ff8533;
 }
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, footer, a.btn, button.btn, a.nav-link.active{
-  color:white !important;
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link,
+footer,
+a.btn,
+button.btn,
+a.nav-link.active {
+  color: white !important;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-  background-color: #FF6600 !important;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #ff6600;
 }
-#programme,#reserver,#actualites,#contact{
+#programme,
+#reserver,
+#actualites,
+#contact {
   padding-top: 50px;
 }
-a.stretched-link, footer a, a.nav-link{
-  color: black !important;
+a.stretched-link,
+footer a,
+a.nav-link {
+  color: black;
 }
-a.stretched-link:hover, footer a:hover{
-  color: #FF6600 !important;
+a.stretched-link:hover,
+footer a:hover {
+  color: #ff6600;
 }
-#form1,#form2,footer{
+#form1,
+#form2,
+footer {
   background-color: #e9ecef;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 25px;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
 }
