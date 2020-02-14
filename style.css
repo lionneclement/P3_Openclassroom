@@ -47,7 +47,7 @@ h2 {
 h3 {
   font-size: 25px;
 }
-@media screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
   h1 {
     font-size: 45px;
   }
